@@ -1,0 +1,16 @@
+@import helper._
+@import domain._
+
+@(demandForm: Form[DemandData])
+
+@form(action = routes.Demands.addDemand()) {
+  @inputText(demandForm("userId"))
+  @inputText(demandForm("tags"))
+  @inputText(demandForm("lon"))
+  @inputText(demandForm("lat"))
+  @inputText(demandForm("radius"))
+  @inputText(demandForm("priceMin"))
+  @inputText(demandForm("priceMax"))
+
+  <button type="submit">Save</button>
+}

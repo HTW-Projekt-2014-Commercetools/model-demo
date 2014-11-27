@@ -1,0 +1,15 @@
+@import helper._
+@import domain._
+
+@(offersForm: Form[OfferData])
+
+@form(action = routes.Offers.addOffer()) {
+  @inputText(offersForm("userId"))
+  @inputText(offersForm("productId"))
+  @inputText(offersForm("tags"))
+  @inputText(offersForm("lon"))
+  @inputText(offersForm("lat"))
+  @inputText(offersForm("price"))
+
+  <button type="submit">Save</button>
+}
