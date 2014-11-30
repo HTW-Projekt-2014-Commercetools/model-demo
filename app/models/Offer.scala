@@ -1,11 +1,13 @@
 package models
 
 import play.api.libs.json._
+import domain.UserId
 
 case class Offer(
-	userId: String,
-	productId: String,
+	uid: String,
+	pid: String,
 	tags: String,
+	// location: Location,
 	lon: Double,
 	lat: Double,
 	price: Double)

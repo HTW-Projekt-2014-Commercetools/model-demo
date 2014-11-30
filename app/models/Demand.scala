@@ -3,11 +3,12 @@ package models
 import play.api.libs.json._
 
 case class Demand(
-	userId: String,
+	uid: String,
 	tags: String,
+	// location: Location,
 	lon: Double,
 	lat: Double,
-	radius: Int,
+	distance: Int,
 	priceMin: Double,
 	priceMax: Double)
 

@@ -17,6 +17,9 @@ object Offers extends Controller {
 
   val offersForm: Form[OfferData] = Form {
   	mapping(
+      // "userId" -> mapping(
+      //   "value" -> of[Long]
+      //   )(UserId.apply)(UserId.unapply),
       "userId" -> nonEmptyText,
       "productId" -> nonEmptyText,
       "tags" -> nonEmptyText,
